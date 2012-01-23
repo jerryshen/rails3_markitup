@@ -10,6 +10,7 @@
 // Basic set. Feel free to add more tags
 // ----------------------------------------------------------------------------
 var mySettings = {
+  previewParserPath: '/markitup/parsers/default',
 	onShiftEnter:  	{keepDefault:false, replaceWith:'<br />\n'},
 	onCtrlEnter:  	{keepDefault:false, openWith:'\n<p>', closeWith:'</p>'},
 	onTab:    		{keepDefault:false, replaceWith:'    '},
