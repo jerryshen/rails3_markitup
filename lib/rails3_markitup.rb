@@ -1,8 +1,8 @@
 require 'rails3_markitup/version'
-require 'rails_kindeditor/engine'
+require 'rails3_markitup/engine'
 
 module Rails3Markitup
 
-  require 'rails_kirails3_markitup/engin'
+  require 'rails3_markitup/engin'
 
 end
