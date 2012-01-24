@@ -11,25 +11,26 @@ This engine includes the following MarkItUp elements:
 
 * MarkItUp images and stylesheets
 * MarkItUp javascript
-* a MarkItUp set for Markdown 
+* MarkItUp sets for Hmtl, Markdown 
 
 MarkItUp support a variety of markup parsers, however, this plugin only includes support for Markdown and HTML.
 Pull requests are welcome!
 
-= Usage
+## Usage
 
-Add the markitup_rails gem to your Gemfile.  In Gemfile:
+Add the rails3_markitup gem to your Gemfile.  In Gemfile:
 
-    gem "markitup_rails"
+    gem "rails3_markitup"
     
-Basically include <%= include_markitup_if_needed %> under the <head> element of your in your layout file:
+Basically include `<%= include_markitup_if_needed %>` under the `<head>` element of your in your layout file:
 
     <%= include_markitup_if_needed %>
 
 In your controller, use include_markitup method to load markitup javascripts and stylesheets:
 
-    include_markitup
+    include_markitup :only => [:new, :edit]
+    include_markitup :except => [:index, :show, :destroy, :create]
 
-Assign your textarea with id
+Assign your textarea with class name `markitup_html`
 
     :classs => "markitup_html"
