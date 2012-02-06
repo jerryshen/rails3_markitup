@@ -16,6 +16,6 @@ Gem::Specification.new do |gem|
   gem.version       = Rails3Markitup::VERSION
   
   gem.add_dependency 'rails',     '~> 3.1'
-  gem.add_dependency 'bundler',   '~> 1.1.rc'
+  gem.add_dependency 'bundler',   '~> 1.0'
   gem.add_dependency 'bluecloth'
 end
